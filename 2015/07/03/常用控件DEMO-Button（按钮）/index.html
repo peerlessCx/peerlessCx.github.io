@@ -134,239 +134,301 @@
 		<br>
 		<a href="https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=ZH-CN&k=k(Windows.UI.Xaml.Controls.Button);k(VS.XamlEditor);k(TargetFrameworkMoniker-WindowsPhoneApp,Version%3Dv8.1)&rd=true" target="_blank">点击查看官方文档</a>
 	</blockquote>
-	<br>
+
 	<a id="more"></a>
-	<table>
-		<tr>
-			<th>常用属性</th>
-			<th>属性值</th>
-			<th>作用</th>
-		</tr>
-		<tr>
-			<td>x:Name</td>
-			<td>
-				自定义字符串，
-				<br>
-				不以数字开头，
-				<br>
-				支持中文但是不推荐使用。
-			</td>
-			<td>
-				唯一对象标识元素，
-				<br>
-				在代码编写过程中，
-				<br>
-				使用该属性的值可以访问对象。
-			</td>
-		</tr>
-		<tr>
-			<td>Content</td>
-			<td>
-				自定义字符串，
-				<br>
-				支持中文。
-			</td>
-			<td>显示按钮的文本内容。</td>
-		</tr>
-		<tr>
-			<td>FontStyle</td>
-			<td>
-				Italic：斜体（调用斜体字）
-				<br>
-				Normal：正常
-				<br>
-				Oblique：斜体（直接使字体倾斜）。
-			</td>
-			<td>设置字体的样式。</td>
-		</tr>
-		<tr>
-			<td>FontWeight</td>
-			<td>
-				属性值很多，
-				<br>
-				具体的代码里看效果吧，
-				<br>
-				没有特殊需要其实用不着。
-			</td>
-			<td>设置字体的粗细。</td>
-		</tr>
-		<tr>
-			<td>FontSize</td>
-			<td>数值</td>
-			<td>设置字体的大小。</td>
-		</tr>
-		<tr>
-			<td>BorderBrush</td>
-			<td>
-				可以直接指定颜色值的名称
-				<br>
-				可以设置RGB值
-				<br>
-				可以设置ScRGB值。
-			</td>
-			<td>设置边框的颜色。</td>
-		</tr>
-		<tr>
-			<td>BorderThickness</td>
-			<td>数值</td>
-			<td>设置边框的宽度。</td>
-		</tr>
-		<tr>
-			<td>Foreground</td>
-			<td>
-				可以直接指定颜色值的名称
-				<br>
-				可以设置RGB值
-				<br>
-				可以设置ScRGB值设置前景色。
-			</td>
-			<td>
-				设置前景色，
-				<br>
-				对于按钮来说，
-				<br>
-				就是设置按钮文本内容的颜色。
-			</td>
-		</tr>
-		<tr>
-			<td>Background</td>
-			<td>
-				可以直接指定颜色值的名称
-				<br>
-				可以设置RGB值
-				<br>
-				可以设置ScRGB值设置前景色。
-			</td>
-			<td>设置背景色。</td>
-		</tr>
-		<tr>
-			<td>HorizontalAlignment</td>
-			<td>
-				Center：居中
-				<br>
-				Letf：居左
-				<br>
-				Right：居右
-				<br>
-				Stretch：拉伸。
-			</td>
-			<td>设置按钮的横向对齐模式。</td>
-		</tr>
-		<tr>
-			<td>VerticalAlignment</td>
-			<td>
-				Bottom：底部
-				<br>
-				Center：中间
-				<br>
-				Stretch：拉伸
-				<br>
-				Top：顶部。
-			</td>
-			<td>设置按钮的纵向对齐模式。</td>
-		</tr>
-		<tr>
-			<td>Width</td>
-			<td>数值</td>
-			<td>设置按钮的宽度。</td>
-		</tr>
-		<tr>
-			<td>Height</td>
-			<td>数值</td>
-			<td>设置按钮的高度。</td>
-		</tr>
-		<tr>
-			<td>Padding</td>
-			<td>
-				设置方式有三种，
-				<br>
-				只有一个数值，设置统一的边距，
-				<br>
-				Left&Right一个数，Top&Bottom一个数
-				<br>
-				分别设置四边，设置顺序：Left、Top、Right、Bottom。
-			</td>
-			<td>设置按钮的内边距。</td>
-		</tr>
-		<tr>
-			<td>Margin</td>
-			<td>
-				设置方式有三种，
-				<br>
-				只有一个数值，设置统一的边距，
-				<br>
-				Left&Right一个数，Top&Bottom一个数
-				<br>
-				分别设置四边，设置顺序：Left、Top、Right、Bottom。
-			</td>
-			<td>设置按钮的外边距。</td>
-		</tr>
-		<tr>
-			<td>Click</td>
-			<td>
-				设置按钮的点击事件，
-				<br>
-				可由Visual Studio根据按钮的x:Name自动生成。
-			</td>
-			<td>
-				自定义字符串，
-				<br>
-				不以数字开头。
-			</td>
-		</tr>
-		<tr>
-			<td>ClickMode</td>
-			<td>设置按钮的点击事件的触发模式。</td>
-			<td>
-				Hover：滑过就触发
-				<br>
-				Press：按下就触发
-				<br>
-				Release：按下后松开才触发
-			</td>
-		</tr>
-	</table>
-	<h4>按钮的代码及效果展示：</h4>
-	<table>
-		<tr>
-			<th></th>
-			<th></th>
-		</tr>
-		<tr>
-			<th>
-				<a href="http://i1.tietuku.com/601ab019c435394c.png" target="_blank">常规按钮代码展示（XAML）</a>
-			</th>
-			<th>
-				<a href="http://i1.tietuku.com/26fb4f23bfabcb44.png" target="_blank">常规按钮效果展示</a>
-			</th>
-		</tr>
-		<tr>
-			<th>
-				<a href="http://i1.tietuku.com/6e56302cdd5adcf5.png" target="_blank">图片Button代码展示（XAML）</a>
-			</th>
-			<th>
-				<a href="http://i1.tietuku.com/2755ffe61d69d433.png" target="_blank">图片Button效果展示</a>
-			</th>
-		</tr>
-		<tr>
-			<th>
-				<a href="http://i1.tietuku.com/d857ab495faa2bee.png" target="_blank" rel="external">Symbol图形按钮代码展示（XAML）</a>
-			</th>
-			<th>
-				<a href="http://i1.tietuku.com/1ec59dbd41f2b14b.png" target="_blank" rel="external">Symbol图形按钮效果展示</a>
-			</th>
-		</tr>
-	</table>
-	<p>
-		<span style="color:#FF0000">注意：</span>
-		代码展示只是最基本的代码，其他各类效果可以自行尝试添加。
-	</p>
-	<h5>参考资料：</h5>
-	<p>
-		<a href="https://msdn.microsoft.com/zh-cn/library/windows.ui.text.fontweights.aspx" target="_blank">FontWeight属性值</a>
-		丨
-		<a href="https://msdn.microsoft.com/zh-cn/library/windows.ui.xaml.controls.symbol.aspx" target="_blank" rel="external">Symbol图形</a>
-	</p>
+	<h4>常用属性、属性值及作用：</h4>
+	<br>
+
+	<blockquote class="blockquote-center">
+		<h5>x:Name</h5>
+		<p> <b>作用：</b>
+			<br>
+			唯一标识元素，在代码编写过程中，可以使用该属性的值找到对应控件
+		</p>
+		<p> <b>属性值：</b>
+			<br>
+			自定义名称，建议遵守驼峰命名法
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>Content</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			按钮的文本内容，提示用户该按钮的作用
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			自定义名称，有实际意义即可
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>FontStyle</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的字体样式
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			Italic（斜体，调用字体的斜体）
+			<br>
+			Normal（默认）
+			<br>
+			Oblique（斜体，直接使字体倾斜）
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>FontWeight</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的字体粗细
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			ExtraLight（细）
+			<br>
+			Normal（正常）
+			<br>
+			Bold（粗）
+			<br>
+			Tips：常用的也就这仨，全部的属性可以到这里查看：
+			<a href="https://msdn.microsoft.com/zh-cn/library/windows.ui.text.fontweights.aspx" target="_blank">点击查看官方文档</a>
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>FontSize</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的字体大小
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			阿拉伯数字
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>BorderBrush</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的边框颜色
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			使用颜色名称，例如：White
+			<br>
+			使用RGB值
+			<br>
+			使用ScRGB值
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>BorderThickness</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的边框宽度
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			阿拉伯数字
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>Foreground</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的前景色，对于按钮来说，就是按钮Content的颜色
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			使用颜色名称，例如：White
+			<br>
+			使用RGB值
+			<br>
+			使用ScRGB值
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>Background</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的背景色
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			使用颜色名称，例如：White
+			<br>
+			使用RGB值
+			<br>
+			使用ScRGB值
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>HorizontalAlignment</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的横向对齐方式
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			Center（居中）
+			<br>
+			Left（居左）
+			<br>
+			Right（居右）
+			<br>
+			Stretch（拉伸）
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>VerticalAlignment</h5>
+		<p>
+			<b>作用：</b>
+			指定按钮的纵向对齐方式
+			<br>
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			Bottom（底部）
+			<br>
+			Center（中间）
+			<br>
+			Stretch（拉伸）
+			<br>
+			Top（顶部）
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>Width</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的宽度
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			阿拉伯数字
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>Height</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的高度
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			阿拉伯数字
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>Padding</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的内边距
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			四个阿拉伯数字（分别设置Left、Top、Right、Bottom的内边距）
+			<br>
+			Tips：还有其他两种指定方式，但是我掌握不太好，感兴趣的可以
+			<a href="https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=ZH-CN&k=k(Windows.UI.Xaml.Controls.Control.Padding);k(VS.XamlEditor);k(TargetFrameworkMoniker-WindowsPhoneApp,Version%3Dv8.1)&rd=true" target="_blank">点此查看官方文档</a>
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>Margin</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的外边距
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			四个阿拉伯数字（分别设置Left、Top、Right、Bottom的外边距）
+			<br>
+			Tips：还有其他两种指定方式，但是我掌握不太好，感兴趣的可以
+			<a href="https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=ZH-CN&k=k(Windows.UI.Xaml.FrameworkElement.Margin);k(VS.XamlEditor);k(TargetFrameworkMoniker-WindowsPhoneApp,Version%3Dv8.1)&rd=true" target="_blank">点此查看官方文档</a>
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>Click</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的点击事件
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			自定义名称
+			<br>
+			或者使用Visual Studio的根据控件的x:Name自动命名功能
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5>ClickMode</h5>
+		<p>
+			<b>作用：</b>
+			<br>
+			指定按钮的点击事件的触发模式
+		</p>
+		<p>
+			<b>属性值：</b>
+			<br>
+			Hover（滑过就触发）
+			<br>
+			Press（按下就触发）
+			<br>
+			Release（按下后松开才触发）
+		</p>
+	</blockquote>
+
+	<blockquote class="blockquote-center">
+		<h5><a href="http://i1.tietuku.com/601ab019c435394c.png" target="_blank">常规按钮代码展示</a>丨<a href="http://i1.tietuku.com/26fb4f23bfabcb44.png" target="_blank">常规按钮效果展示</a></h5>
+		<h5><a href="http://i1.tietuku.com/6e56302cdd5adcf5.png" target="_blank">图片按钮代码展示</a>丨<a href="http://i1.tietuku.com/2755ffe61d69d433.png" target="_blank">图片按钮效果展示</a></h5>
+		<h5><a href="http://i1.tietuku.com/d857ab495faa2bee.png" target="_blank" rel="external">Symbol图形按钮代码展示</a>丨<a href="http://i1.tietuku.com/1ec59dbd41f2b14b.png" target="_blank" rel="external">Symbol图形按钮效果展示</a></h5>
+		<h5>Tips：这些展示只有创建按钮所需的最基本的代码，其他各类效果可以自行创建DEMO尝试</h5>
+	</blockquote>
+
 </body>
 </html>
       
@@ -478,7 +540,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">按钮的代码及效果展示：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">参考资料：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">常用属性、属性值及作用：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">x:Name</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">Content</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">FontStyle</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.4.</span> <span class="nav-text">FontWeight</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.5.</span> <span class="nav-text">FontSize</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.6.</span> <span class="nav-text">BorderBrush</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.7.</span> <span class="nav-text">BorderThickness</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.8.</span> <span class="nav-text">Foreground</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.9.</span> <span class="nav-text">Background</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.10.</span> <span class="nav-text">HorizontalAlignment</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.11.</span> <span class="nav-text">VerticalAlignment</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.12.</span> <span class="nav-text">Width</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.13.</span> <span class="nav-text">Height</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.14.</span> <span class="nav-text">Padding</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.15.</span> <span class="nav-text">Margin</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.16.</span> <span class="nav-text">Click</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.17.</span> <span class="nav-text">ClickMode</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.18.</span> <span class="nav-text">常规按钮代码展示丨常规按钮效果展示</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.19.</span> <span class="nav-text">图片按钮代码展示丨图片按钮效果展示</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.20.</span> <span class="nav-text">Symbol图形按钮代码展示丨Symbol图形按钮效果展示</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.21.</span> <span class="nav-text">Tips：这些展示只有创建按钮所需的最基本的代码，其他各类效果可以自行创建DEMO尝试</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
